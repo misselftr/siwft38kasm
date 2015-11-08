@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../sesKayitSwift3/SecondViewController.swift">
+   </FileRef>
+   <FileRef
       location = "self:sesKayitSwift3.xcodeproj">
    </FileRef>
 </Workspace>

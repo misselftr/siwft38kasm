@@ -13,6 +13,9 @@
 		66D6A4901BEF79C500AAF644 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D6A48F1BEF79C500AAF644 /* Images.xcassets */; };
 		66D6A4931BEF79C500AAF644 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D6A4911BEF79C500AAF644 /* LaunchScreen.xib */; };
 		66D6A49F1BEF79C600AAF644 /* sesKayitSwift3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6A49E1BEF79C600AAF644 /* sesKayitSwift3Tests.swift */; };
+		66D6A4AB1BEF907700AAF644 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6A4AA1BEF907700AAF644 /* SecondViewController.swift */; };
+		66D6A4AD1BEF9B3F00AAF644 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 66D6A4AC1BEF9B3F00AAF644 /* movie_quote.mp3 */; };
+		66D6A4AF1BEF9D3C00AAF644 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D6A4AE1BEF9D3C00AAF644 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		66D6A4981BEF79C600AAF644 /* sesKayitSwift3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sesKayitSwift3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D6A49D1BEF79C600AAF644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66D6A49E1BEF79C600AAF644 /* sesKayitSwift3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sesKayitSwift3Tests.swift; sourceTree = "<group>"; };
+		66D6A4AA1BEF907700AAF644 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		66D6A4AC1BEF9B3F00AAF644 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie_quote.mp3; sourceTree = "<group>"; };
+		66D6A4AE1BEF9D3C00AAF644 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D6A4AF1BEF9D3C00AAF644 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +66,7 @@
 		66D6A47A1BEF79C500AAF644 = {
 			isa = PBXGroup;
 			children = (
+				66D6A4AE1BEF9D3C00AAF644 /* AVFoundation.framework */,
 				66D6A4851BEF79C500AAF644 /* sesKayitSwift3 */,
 				66D6A49B1BEF79C600AAF644 /* sesKayitSwift3Tests */,
 				66D6A4841BEF79C500AAF644 /* Products */,
@@ -78,7 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				66D6A4881BEF79C500AAF644 /* AppDelegate.swift */,
+				66D6A4AA1BEF907700AAF644 /* SecondViewController.swift */,
 				66D6A48A1BEF79C500AAF644 /* ViewController.swift */,
+				66D6A4AC1BEF9B3F00AAF644 /* movie_quote.mp3 */,
 				66D6A48C1BEF79C500AAF644 /* Main.storyboard */,
 				66D6A48F1BEF79C500AAF644 /* Images.xcassets */,
 				66D6A4911BEF79C500AAF644 /* LaunchScreen.xib */,
@@ -194,6 +204,7 @@
 			files = (
 				66D6A48E1BEF79C500AAF644 /* Main.storyboard in Resources */,
 				66D6A4931BEF79C500AAF644 /* LaunchScreen.xib in Resources */,
+				66D6A4AD1BEF9B3F00AAF644 /* movie_quote.mp3 in Resources */,
 				66D6A4901BEF79C500AAF644 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D6A4AB1BEF907700AAF644 /* SecondViewController.swift in Sources */,
 				66D6A48B1BEF79C500AAF644 /* ViewController.swift in Sources */,
 				66D6A4891BEF79C500AAF644 /* AppDelegate.swift in Sources */,
 			);
