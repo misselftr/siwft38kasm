@@ -15,7 +15,7 @@ class SecondViewController: UIViewController {
     //NSBundle herhangi bir ya da daha fazla dosyanın yolunu verir.
     
     var audioPlayer: AVAudioPlayer!
-    var rate: Float = 1
+    var receivedAudio: RecordedAudio!
     
     @IBOutlet weak var btnAFast: UIButton!
     
@@ -41,7 +41,9 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         self.title="Play"
         // Do any additional setup after loading the view.
-            if var filePath=NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3")
+       
+        // Bir yerde bulunan sesi çalan kod parçası. Kendi sesimizi laydedeceksek bu artık gereksiz.
+        /*     if var filePath=NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3")
         {
             var filePathURL = NSURL.fileURLWithPath(filePath)
             audioPlayer = AVAudioPlayer(contentsOfURL: filePathURL, error: nil)
@@ -50,7 +52,10 @@ class SecondViewController: UIViewController {
             else
         {
             println("Can not find sound file")
-        }
+        }*/
+        
+        audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl, error: nil)
+        audioPlayer.enableRate=true
     }
 
     override func didReceiveMemoryWarning() {

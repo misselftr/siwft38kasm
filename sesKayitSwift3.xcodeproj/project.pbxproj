@@ -16,6 +16,7 @@
 		66D6A4AB1BEF907700AAF644 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6A4AA1BEF907700AAF644 /* SecondViewController.swift */; };
 		66D6A4AD1BEF9B3F00AAF644 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 66D6A4AC1BEF9B3F00AAF644 /* movie_quote.mp3 */; };
 		66D6A4AF1BEF9D3C00AAF644 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D6A4AE1BEF9D3C00AAF644 /* AVFoundation.framework */; };
+		66D6A4B11BEFAF0F00AAF644 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D6A4B01BEFAF0F00AAF644 /* RecordedAudio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		66D6A4AA1BEF907700AAF644 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		66D6A4AC1BEF9B3F00AAF644 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie_quote.mp3; sourceTree = "<group>"; };
 		66D6A4AE1BEF9D3C00AAF644 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		66D6A4B01BEFAF0F00AAF644 /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				66D6A4881BEF79C500AAF644 /* AppDelegate.swift */,
 				66D6A4AA1BEF907700AAF644 /* SecondViewController.swift */,
 				66D6A48A1BEF79C500AAF644 /* ViewController.swift */,
+				66D6A4B01BEFAF0F00AAF644 /* RecordedAudio.swift */,
 				66D6A4AC1BEF9B3F00AAF644 /* movie_quote.mp3 */,
 				66D6A48C1BEF79C500AAF644 /* Main.storyboard */,
 				66D6A48F1BEF79C500AAF644 /* Images.xcassets */,
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D6A4B11BEFAF0F00AAF644 /* RecordedAudio.swift in Sources */,
 				66D6A4AB1BEF907700AAF644 /* SecondViewController.swift in Sources */,
 				66D6A48B1BEF79C500AAF644 /* ViewController.swift in Sources */,
 				66D6A4891BEF79C500AAF644 /* AppDelegate.swift in Sources */,
