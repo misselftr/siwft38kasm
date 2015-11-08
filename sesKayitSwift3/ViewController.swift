@@ -7,17 +7,42 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+    
+    var audioRecorder: AVAudioRecorder!
 
     @IBOutlet weak var btnOStop: UIButton!
     @IBOutlet weak var lblRecording: UILabel!
+    
     @IBAction func btnStop(sender: AnyObject) {
-        
+        audioRecorder.stop()
     }
     @IBAction func btnRec(sender: AnyObject) {
         btnOStop.hidden=false
         lblRecording.hidden=false
+        
+        //TODO: Record Audio fnc
+        
+        let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String
+        
+        let currentDateTime = NSDate()
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "ddMMyyyy-HHmmss"
+        
+        let recordingName = formatter.stringFromDate(currentDateTime)+".wav"
+        let pathArray = [dirPath, recordingName]
+        let filePath = NSURL.fileURLWithPathComponents(pathArray)
+        print(filePath)
+        
+        var session = AVAudioSession.sharedInstance()
+        session.setCategory(AVAudioSessionCategoryPlayAndRecord, error: nil)
+        
+        audioRecorder.meteringEnabled = true
+        audioRecorder.prepareToRecord()
+        audioRecorder.record()
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
