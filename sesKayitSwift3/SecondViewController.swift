@@ -15,10 +15,25 @@ class SecondViewController: UIViewController {
     //NSBundle herhangi bir ya da daha fazla dosyanın yolunu verir.
     
     var audioPlayer: AVAudioPlayer!
+   // var audioShifter: AVAudioPlayerNode!
     var receivedAudio: RecordedAudio!
+ // TEST  var engine: AVAudioEngine!
+   
+    /* engine = AVAudioEngine()
+    playerNode = AVAudioPlayerNode()
+    engine.attachNode(playerNode)*/
+    
+    @IBAction func btnLowPitch(sender: AnyObject) {
+        
+        
+    }
     
     @IBOutlet weak var btnAFast: UIButton!
     
+    @IBAction func btnHighPitch(sender: AnyObject) {
+        
+        //audioPlayer.play()
+    }
     
     @IBAction func btnStopSound(sender: AnyObject) {
         audioPlayer.stop()
@@ -56,6 +71,10 @@ class SecondViewController: UIViewController {
         
         audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl, error: nil)
         audioPlayer.enableRate=true
+        
+        //TEST
+      /*  audioShifter = AVAudioPlayerNode()
+        engine.attachNode(audioShifter)*/
     }
 
     override func didReceiveMemoryWarning() {

@@ -119,6 +119,9 @@
                                 <variation key="widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="54" y="326" width="155" height="100"/>
                                 </variation>
+                                <connections>
+                                    <action selector="btnHighPitch:" destination="W1L-hP-gMU" eventType="touchUpInside" id="Jpu-8G-f15"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mY1-08-Ok2">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -129,6 +132,9 @@
                                 <variation key="widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="182" y="326" width="155" height="100"/>
                                 </variation>
+                                <connections>
+                                    <action selector="btnLowPitch:" destination="W1L-hP-gMU" eventType="touchUpInside" id="FJc-Pv-Jxf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1TH-Ml-KM3">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
